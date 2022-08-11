@@ -21,5 +21,6 @@ namespace DataAnnotations
 
         public virtual Author Author { get; set; }
         public virtual ICollection<Tag> Tags { get; set; }
+        public int AuthorId { get; set; }
     }
 }
