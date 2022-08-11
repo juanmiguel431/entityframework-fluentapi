@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace DataAnnotations
+namespace FluentAPI
 {
     public class PlutoContext : DbContext
     {

@@ -5,14 +5,14 @@ namespace FluentAPI.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DataAnnotations.PlutoContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<PlutoContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(DataAnnotations.PlutoContext context)
+        protected override void Seed(PlutoContext context)
         {
             //  This method will be called after migrating to the latest version.
 

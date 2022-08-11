@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DataAnnotations
+namespace FluentAPI
 {
     public class Tag
     {
