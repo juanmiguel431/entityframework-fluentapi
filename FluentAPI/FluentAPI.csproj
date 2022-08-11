@@ -54,9 +54,14 @@
   <ItemGroup>
     <Compile Include="Author.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="Cover.cs" />
     <Compile Include="Migrations\202208112129070_InitialModel.cs" />
     <Compile Include="Migrations\202208112129070_InitialModel.designer.cs">
       <DependentUpon>202208112129070_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208112226241_AddCoverTable.cs" />
+    <Compile Include="Migrations\202208112226241_AddCoverTable.designer.cs">
+      <DependentUpon>202208112226241_AddCoverTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
@@ -73,6 +78,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202208112129070_InitialModel.resx">
       <DependentUpon>202208112129070_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208112226241_AddCoverTable.resx">
+      <DependentUpon>202208112226241_AddCoverTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

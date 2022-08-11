@@ -51,6 +51,10 @@ namespace FluentAPI
                     c.MapRightKey($"{nameof(Course)}{nameof(Course.Id)}");
                 });
 
+            modelBuilder.Entity<Course>()
+                .HasRequired(c => c.Cover)
+                .WithRequiredPrincipal(c => c.Course);
+            
             base.OnModelCreating(modelBuilder);
         }
     }
