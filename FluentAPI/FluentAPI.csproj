@@ -64,6 +64,10 @@
     <Compile Include="Migrations\202208112226241_AddCoverTable.designer.cs">
       <DependentUpon>202208112226241_AddCoverTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208120311245_FixingVideoTagsForeignKeys.cs" />
+    <Compile Include="Migrations\202208120311245_FixingVideoTagsForeignKeys.designer.cs">
+      <DependentUpon>202208120311245_FixingVideoTagsForeignKeys.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -82,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208112226241_AddCoverTable.resx">
       <DependentUpon>202208112226241_AddCoverTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208120311245_FixingVideoTagsForeignKeys.resx">
+      <DependentUpon>202208120311245_FixingVideoTagsForeignKeys.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

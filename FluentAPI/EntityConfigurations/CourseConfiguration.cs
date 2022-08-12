@@ -23,9 +23,9 @@ namespace FluentAPI.EntityConfigurations
                 .WithMany(t => t.Courses)
                 .Map(c =>
                 {
-                    c.ToTable("CourseTags");
-                    c.MapLeftKey($"{nameof(Tag)}{nameof(Tag.Id)}");
-                    c.MapRightKey($"{nameof(Course)}{nameof(Course.Id)}");
+                    c.ToTable("CourseTags")
+                        .MapRightKey($"{nameof(Tag)}{nameof(Tag.Id)}")
+                        .MapLeftKey($"{nameof(Course)}{nameof(Course.Id)}");
                 });
 
             HasRequired(c => c.Cover)
